@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+
+<h:head>
+	<title>BASE DE DATOS NACIMIENTOS EN COMUNIDADES AUTÓNOMAS</title>
+
+	<link href="./css/Style.css" rel="stylesheet" type="text/css"></link>
+	<!-- Este es importante ayuda a tener el css -->
+	<link href="./css/home.css" rel="stylesheet" type="text/css"></link>
+	<link href="./css/Footer.css" rel="stylesheet" type="text/css"></link>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display;swap"
+		rel="stylesheet"></link>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cairo&display;swap"
+		rel="stylesheet"></link>
+	<meta name="description" content="website description" />
+	<meta name="keywords" content="website keywords, website keywords" />
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+
+	<script src="https://kit.fontawesome.com/6ecee873b7.js"
+		crossorigin="anonymous"></script>
+</h:head>
+
+<h:body>
+	<h:form>
+
+<div class = "sticky">
+		<!-- nav-bar -->
+		<header> <a class="logo" href="Index.xhtml"><img
+			src="./images/logo_1.png" alt="logo" style="width: 65%"> </img></a> <nav>
+		<ul class="nav__links">
+			<li><a href="Index.xhtml">Inicio</a></li>
+			<li><a href="Comprar.xhtml">Informes</a></li>
+			<li><a href="FAQ.xhtml">Preguntas Frecuentes</a></li>
+			<li><a href="About.xhtml">Sobre Nosotros</a></li>
+			<li></li>
+			<li>¿Tienes una cuenta con nosotros?</li>
+			<li><a href="Login.xhtml"><i class="fas fa-user"></i>
+					Iniciar Sesión </a></li>
+		</ul>
+		</nav> </header>
+		<!-- nav-bar end -->
+</div>
+
+		<!-- Presentación -->
+		<div class="container_intro">
+
+			<!-- Columna Comunidadess -->
+			<div class="col-1">
+				<table
+					summary="Tabla con los datos de los resultados de la búsqueda">
+
+					<tr>
+						<th abbr="Imagen de la bandera" scope="col"></th>
+						<th abbr="Nombre de la Comunidad" scope="col"><h3
+								style="text-align: center; font-style: italic;">Comunidades
+								Autónomas</h3></th>
+					</tr>
+
+					<tr>
+						<td><img src="./images/Anda_1.png" alt="Andalucía" /></td>
+						<td>
+							<h4>Andalucía</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td><img src="./images/Ara_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Aragón</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td><img src="./images/Ast_1.png" alt="Asturias" /></td>
+						<td>
+							<h4>Asturias</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Balear_1.png" alt="Balear" /></td>
+						<td>
+							<h4>Balears</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Can_1.png" alt="Cana" /></td>
+						<td>
+							<h4>Canarias</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Cant_1.png" alt="Canta" /></td>
+						<td>
+							<h4>Cantabria</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Cast_Leo_1.png" alt="Castilla michi" /></td>
+						<td>
+							<h4>Castilla y León</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Cast_1.png" alt="mancha" /></td>
+						<td>
+							<h4>Castilla - La Mancha</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Cata_1.png" alt="Catalu" /></td>
+						<td>
+							<h4>Cataluña</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Valencia_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Comunitat Valenciana</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Extrem_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Extremadura</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Galic_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Galicia</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Madrid_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Madrid</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Murcia_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Murcia</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Navarra_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Navarra</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Pais_Vasco_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>País Vasco</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Rioja_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Rioja</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Ceuta_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Ceuta</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Melilla_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Melilla</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="./images/Ara_1.png" alt="Aragón" /></td>
+						<td>
+							<h4>Países Extranjeros</h4>
+						</td>
+					</tr>
+
+
+				</table>
+
+				<!-- Tabla de Comunidades -->
+
+			</div>
+			<!--  FINTabla de Comunidades -->
+
+
+			<!-- Columna Informativa -->
+			<div class="col-2">
+
+				<!-- Fila Slider -->
+				<div class="row-1">
+
+
+					<div class="row">
+						<div class="column" >
+							<img src="./images/imagen.jpg" style="width: 110%"></img>
+						</div>
+						<div class="column" >
+							<img src="./images/imagen1.jpg" style="width: 110%"></img>
+						</div>
+						<div class="column" >
+							<img src="./images/imagen2.jpg" style="width: 110%"></img>
+						</div>
+					</div>
+
+				</div>
+				<!-- Fila Slider -->
+				<div class="row-2">
+
+					<h1 style="text-align: center; font-style: italic;">BASE DE
+						DATOS SOBRE NACIMIENTOS EN LAS COMUNIDADES AUTÓNOMAS DE ESPAÑA</h1>
+					<br />
+					<p style="text-align: center;">"Análisis de Datos con base en
+						Rangos de Edades de entre 15 y 50 años"</p>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Presentación FInal  -->
+
+
+
+
+
+		<!-- *************************************************************************************************************************************************************************-->
+		<!-- Footer -->
+		<footer>
+		<div class="cointainer-footer-all">
+
+			<!-- Container -->
+			<div class="container-body">
+
+				<!-- Columna 1 -->
+				<div class="column-1">
+					<p class="prueba_1" style="text-align: center">Términos y
+						Condiciones de uso</p>
+					<br></br>
+					<p style="text-align: center">Toda la información mostrada en
+						este sitio web se publica solo con fines informativos "España
+						Reporta" esta información ha sido recopilada de fuentes oficiales
+						y está sujeta a cambios. Cualquier acción que tome sobre la
+						información que encuentre en este sitio web es estrictamente bajo
+						su propio riesgo. Españareporta.com no será responsable de ninguna
+						pérdida y/o daño en relación con el uso de nuestro sitio web.</p>
+
+				</div>
+
+				<!-- Columna 2 -->
+				<div class="column-2">
+
+					<!-- Fila 1 -->
+					<div class="row">
+						<img alt="imagen" src="./images/logo_1.png" style="width: 60%"></img>
+
+					</div>
+				</div>
+			</div>
+			<!-- Container -->
+
+
+			<!-- Container footer -->
+			<div class="container-footer">
+
+				<div class="copyright">
+					©2020 Todos los derechos Reservados | <a
+						href="mailto: jbarrionuevop@est.ups.edu.ec"> Jonathan
+						Barrionuevo </a>| <a href="mailto: crevelol@est.ups.edu.ec">
+						Carlos Revelo </a>| <a href="mailto:eaulestia@est.ups.edu.ec">
+						Gabriel Morales </a>| <a
+						href="mailto:cmoralesc4@est.ups.edu.ec"> Esteban
+						Aulestia </a>
+				</div>
+
+				<div class="information">
+					<a href="Index.xhtml"> Inicio </a>| <a href="informes.xhtml">
+						Informes </a>| <a href="nosotros.xhtml"> Sobre Nosotros</a>
+
+				</div>
+
+			</div>
+			<!-- Container footer -->
+		</div>
+		</footer>
+
+
+
+
+
+
+	</h:form>
+</h:body>
+</html>
