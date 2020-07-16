@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+		
+	</h:head>
+	<h:body>
+		<h:form>
+		  	<h:panelGrid columns="3">
+    		<label>Nombre :</label>
+    		<h:inputText value="#{persona.nombre}" id="nombre" requiredMessage="El campo es obligatorio">
+    			<f:validateRequired />
+    		</h:inputText>
+    		<h:message for="nombre" style="color:red; font-family:Arial" />
+    
+    		<label>Edad :</label>
+    		<h:inputText value="#{persona.edad}" required="true" id="edad" requiredMessage="El campo es obligatorio" validatorMessage="La edad no está en el rango">
+    			<f:validateLongRange minimum="18" maximum="100"  />
+    		</h:inputText>
+    		<h:message for="edad" style="color:red" />
+    		
+    		<label>Direccion</label>
+    		<h:inputText value="#{persona.direccion}" required="true" id="direccion">
+    		<f:validateRequired />
+    		</h:inputText>
+      		<h:message for="direccion" style="color:red" />
+    		
+    		
+    		<label>Correo electrónico</label>
+    		<h:inputText value="#{persona.correo}" required="true" id="correo">
+    		<f:validateRegex pattern=".+[@].+[.].+" />
+    		</h:inputText>
+      		<h:message for="correo" style="color:red" />
+    		
+    		
+    		<label>Telefono</label>
+    		<h:inputText value="#{persona.telefono}" id="telefono" required="true">
+    		<f:validateLength minimum="10" maximum="10"/>
+    		</h:inputText>
+    		<h:message for="telefono" style="color:red" />
+    		
+    		
+    		<label>Estado Civil</label>
+    		<h:selectOneMenu value="#{persona.estadoCivil}">
+    			<f:selectItem itemValue="Soltero" itemLabel="Soltero" />
+    			<f:selectItem itemValue="Casado" itemLabel="Casado"/>
+    			<f:selectItem itemValue="Viudo" itemLabel="Viudo" />
+    		</h:selectOneMenu>   		
+    		</h:panelGrid>
+    		<div>
+		   		<h:commandButton action="#{persona.registrar}" value="Registrar" />
+		   		<input type="reset" value="Restablecer" />
+    		</div>
+    	</h:form>
+	</h:body>
+</html>

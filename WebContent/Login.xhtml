@@ -37,10 +37,9 @@
 </h:head>
 
 
-<h:body>
+<h:body styleClass="body">
 
-	<h:form>
-
+		
 		<!-- nav-bar -->
 		<div class = "sticky">
 		
@@ -63,9 +62,29 @@
 		</div>
 		
 		<!-- *************************************************************************************************************************************************************************-->
-	
-	
-	
+		<div class="login">
+		<h:form>
+		  	<h:panelGrid columns="3">
+    		
+    		<label>Correo electrónico :</label>
+    		<h:inputText required="true" id="correo">
+    		<f:validateRegex pattern=".+[@].+[.].+" />
+    		</h:inputText>
+      		<h:message for="correo" style="color:red" />
+      		
+      		<label>Contraseña :</label>
+    		<h:inputSecret id="telefono" required="true">
+    		<f:validateLength minimum="10" maximum="10"/>
+    		</h:inputSecret>
+    		<h:message for="telefono" style="color:red" />
+    		
+    		<div>
+		   		<h:commandButton action="#{persona.registrar}" value="Registrar" />
+		   		<input type="reset" value="Restablecer" />
+    		</div>
+		</h:panelGrid>
+		</h:form>
+		</div>
 	
 	
 	
@@ -150,7 +169,7 @@
 
 
 
-	</h:form>
+
 </h:body>
 
 </html>
